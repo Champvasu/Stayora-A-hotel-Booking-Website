@@ -1,0 +1,315 @@
+html, body {
+  overflow-x: hidden;
+}
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 4rem;
+  margin: 0 !important;
+}
+
+.container{
+flex: 1;
+}
+
+.text-stayora {
+  color: #fe424d ;
+}
+
+
+.navbar{
+  height: 4rem;
+  background-color: white;
+}
+
+.navbar.sticky-top{
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: white; /* very important */
+}
+
+.nav-link{
+  color: #222222 !important;
+}
+
+#suggestionsBox {
+  top: 100%;
+  z-index: 1000;
+  background: white;
+}
+
+/*footer*/
+  footer{
+    width: 100%;
+    margin-top: auto;
+  }
+ 
+  .f-info{
+    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* ✅ moved here */
+  align-items: center;           /* ✅ fixed */
+  gap: 1rem;
+  padding: 1.5rem 0;
+  margin: 0;
+  min-height: 8rem;
+  background-color: #ebebeb;
+  text-align: center;
+
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i{
+   font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover{ /*kinks ke andar ancher tag*/
+  text-decoration: underline;
+}
+
+/*cards*/
+
+.card{
+  border: none  ;
+  margin-bottom: 2rem;
+}
+.show-card{
+  border: none !important;
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100%;
+  object-fit: cover;
+}
+.card-body{
+  padding: 0;
+}
+.card-text{
+  font-weight: 400 !important;
+}
+
+/*card effect*/
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover{
+  opacity: 0.2;
+  background-color: white;
+}
+
+.listing-link{
+  text-decoration: none;
+}
+
+/*new page styling*/
+.add-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/*edit page styling*/
+.edit-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/*show img styling*/
+.show-img{
+  height: 30vh;
+}
+
+.delete-btn{
+  color: white;
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.show-card{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*new css*/
+/* ===== Listing Cards (Travel Style) ===== */
+
+.listing-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.listing-card {
+  border: none !important;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.listing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Image wrapper */
+.listing-img-wrapper {
+  overflow: hidden;
+}
+
+.listing-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.listing-card:hover .listing-img {
+  transform: scale(1.06);
+}
+
+/* Title */
+.listing-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Price */
+.price-amount {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Location */
+.listing-location {
+  font-size: 0.9rem;
+}
+/*gpt style*/
+
+/*.review-card {
+ border-radius: 14px;
+  border: 1px solid black;
+  transition: all 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+*/
+.review-card {
+  border-radius: 14px;
+  border: 1.5px solid #222222;  /* darker outline */
+  transition: all 0.25s ease;
+  background: #fff;
+}
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+  border-color: #dee2e6;       /* ⭐ subtle hover polish */
+  border: none;
+}
+
+/* Image Grid 
+.image-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* First big image 
+.image-grid img:first-child {
+  grid-row: span 2;
+}
+
+/* Card 
+.show-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Price */
+.price-amount {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.tax-info{
+   font-size: 0.5rem;   /* smaller text */
+  color: #6c757d;        /* optional: lighter gray */   /* optional: lighter gray */
+}
+
+.taxes{
+  border: none;
+  padding: 0;
+}
+
+.tax-toggle .form-switch{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  border-radius: 25px;
+  background-color: #fff;
+
+  width: fit-content;
+}
+
+ .tax-toggle{
+  flex: 0 0 auto;
+  margin-left: auto;       /* push to right */
+
+}
+
+/* Buttons 
+.edit-btn, .delete-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+/* Review cards 
+.review-card {
+  border-radius: 12px;
+  border: 1px solid #eee;
+}*/
+
+/*map styling*/
+#map{
+height: 300px;
+width: 70vh;
+}
