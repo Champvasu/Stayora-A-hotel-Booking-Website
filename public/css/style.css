@@ -35,6 +35,23 @@ flex: 1;
   color: #222222 !important;
 }
 
+.navbar-collapse {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar-collapse .nav-link {
+  color: black !important;
+}
+
+.navbar-collapse .nav-link {
+  margin: 5px 0;
+}
+.navbar-collapse {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
 #suggestionsBox {
   top: 100%;
   z-index: 1000;
